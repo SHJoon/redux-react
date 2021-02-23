@@ -3,10 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
 
 //STORE -> GLOBALIZED STATE
 
-//ACTION
+//ACTION INCREMENT
+const increment = () => {
+  return {
+    type: 'INCREMENT'
+  }
+}
+
+const decrement = () => {
+  return {
+    type: 'DECREMENT'
+  }
+}
+
+//REDUCER
+
+//DISPATCH
 
 
 ReactDOM.render(
